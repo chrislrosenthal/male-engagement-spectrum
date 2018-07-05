@@ -17,4 +17,7 @@ const view = (state, actions) => (
   </div>
 )
 
-app(state, actions, view, document.body)
+window.engagementAppFunction = function(element){
+	app(state, actions, view, element) 
+}
+
